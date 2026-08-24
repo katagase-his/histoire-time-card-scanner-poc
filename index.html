@@ -15,9 +15,12 @@
   <main class="app">
     <div class="brand">Histoire Time card</div>
     <section class="card">
-      <h1>店舗QRを読み取ってください</h1>
-      <p>店舗iPadに表示されている最新QRをカメラに映してください。</p>
-      <div id="reader"></div>
+      <div id="launch" class="launch">
+        <h1>店舗QRを読み取る</h1>
+        <p>カメラを起動して、店舗iPadの最新QRを読み取ってください。</p>
+        <button id="start" class="start" type="button">カメラを起動</button>
+      </div>
+      <div id="reader" hidden></div>
       <button id="retry" type="button" hidden>カメラを再試行</button>
       <div id="error" class="error" role="alert"></div>
     </section>
